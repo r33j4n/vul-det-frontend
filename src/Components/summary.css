@@ -1,0 +1,30 @@
+/* In your CSS file or component styles */
+.prompt-container-summary {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .prompt-header-summary {
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  
+  .prompt-header-summary h2 {
+    color: #333;
+  }
+  
+  .prompt-content-summary {
+    text-align: left;
+  }
+  
+  .prompt-content-summary p {
+    margin: 0;
+    line-height: 1.6;
+    color: #555;
+  }
+  
