@@ -8,8 +8,6 @@ const Home = () => {
     <NavBar />
     <ImageContainer />
     <PromptUI />
-  
-
     </React.Fragment> );
 }
  
