@@ -4,8 +4,8 @@ import axios from 'axios';
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import SummaryPrompt from "./SummaryPrompt";
-import YourMainComponent from "./YourMainComponent";
 import "./PromptUI.css";
+import YourMainCompoinent from "./YourMainComponent";
 
 const PromptUI = () => {
     const [selectedLanguage, setSelectedLanguage] = useState("");
@@ -13,6 +13,7 @@ const PromptUI = () => {
     const [python, setPython] = useState("");
     const [javascript, setJavascript] = useState("");
     const [sql, setSql] = useState("");
+    const [summary, setSummary] = useState("");
 
     const handleLanguageButtonClick = (language) => {
         setSelectedLanguage(language);
@@ -44,6 +45,7 @@ const PromptUI = () => {
         axios.post('http://127.0.0.1:5000/getPrompt', postData)
             .then(response => {
                 // Handle the response as needed
+                setSummary(response.data.result);
                 toast.success("Submission successful!", {
                     position: "bottom-right",
                     autoClose: 3000,
@@ -171,7 +173,8 @@ const PromptUI = () => {
                     Clear
                 </button>
             </div>
-            <YourMainComponent />
+            <SummaryPrompt summary={summary} />
+            <YourMainCompoinent />
             <ToastContainer />
         </React.Fragment>
     );

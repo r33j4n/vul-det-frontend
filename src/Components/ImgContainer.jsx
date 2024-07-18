@@ -17,14 +17,14 @@ const ImageContainer = () => {
                         <div className="p-3">
                             <b>
                                 <p className="text-white mb-0 titlefont m-2 p-2 w-100 textmq">
-                                    DeCod3
+                                    Vul-Det
                                 </p>
                             </b>
                         </div>
                         <div>
                             <b>
                                 <p className="subtext h-25 w-100">
-                                Introducing deCod3 - your coding confidant! Unravel the mysteries of code with a touch of humor. Powered by a savvy combo of large language models and LangChain, it's your code whisperer!                                </p>
+                                Introducing Vul-Det - your coding confidant! Unravel the vulnerelabity of code with a touch of humor. Powered by a savvy combo of Meta Llama3 and LangChain, it's your code whisperer!                                </p>
                             </b>
                         </div>
                           {/* BEGIN: ed8c6549bwf9 */}

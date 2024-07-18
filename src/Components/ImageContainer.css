@@ -21,7 +21,7 @@
 
 .gradient-custom {
     /* fallback for old browsers */
-    background: #010711;
+    background: #9805ed;
 
     /* Chrome 10-25, Safari 5.1-6 */
     background: -webkit-linear-gradient(
@@ -33,8 +33,8 @@
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background: linear-gradient(
       45deg,
-      rgba(98, 7, 225, 0.6),
-      rgba(1, 83, 34, 0.6) 100%
+      rgba(7, 7, 225, 0.6),
+      rgba(83, 1, 1, 0.6) 100%
     );
   }
 

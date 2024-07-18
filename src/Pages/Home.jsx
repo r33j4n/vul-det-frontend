@@ -5,7 +5,6 @@ import ImageContainer from '../Components/ImgContainer';
 import PromptUI from '../Components/PromptUI';
 const Home = () => {
     return ( <React.Fragment>
-    <NavBar />
     <ImageContainer />
     <PromptUI />
     </React.Fragment> );

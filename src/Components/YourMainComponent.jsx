@@ -4,6 +4,10 @@ import './ImageContainer.css';
 
 const YourMainComponent = () => {
   const [apiResponse, setApiResponse] = useState(null);
+  const handleClearSummary = () => {
+    setApiResponse('');
+    // Perform any other necessary actions
+  };
 
   const handleViewSummary = async () => {
     try {
@@ -17,11 +21,11 @@ const YourMainComponent = () => {
 
   return (
     <div  >
-      <button className="btn btn-danger m-2" onClick={handleViewSummary}  >View Summary</button>
-      <button className="btn btn-danger m-2" onClick={handleViewSummary}  >Re-Factor Code</button>
+      <button className="btn btn-danger m-2" onClick={handleViewSummary}  >Refactored Code</button>
+      {/* <button className="btn btn-danger m-2" onClick={handleViewSummary}  >Re-Factor Code</button> */}
       <p className=" ">
       {apiResponse && (
-        <SummaryPrompt summary={apiResponse.summary} />
+        <SummaryPrompt summary={apiResponse.result} onClear={handleClearSummary} />
       )}
       </p>
       
